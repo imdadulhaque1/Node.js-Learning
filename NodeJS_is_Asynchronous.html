@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>JavaScript is Asynchronous</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write('This is First line !<br>')
+        setTimeout(function(){
+        document.write('This is Second line !<br>')
+        },4000)
+        document.write('This is Third line !<br>')
+
+        setTimeout(function(){
+        document.write('This is Fourth line !<br>')
+        },2000)
+
+        setTimeout(function(){
+        document.write('This is Fifth line !<br>')
+        },5000)
+    </script>
+</body>
+</html>
